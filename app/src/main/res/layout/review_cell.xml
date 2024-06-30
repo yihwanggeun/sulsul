@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/genderImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/female" />
+
+    <TextView
+        android:id="@+id/nicknameTextVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/kakaobold"
+        android:gravity="center_vertical"
+        android:text="이황근"
+        app:layout_constraintBottom_toBottomOf="@+id/genderImageView"
+        app:layout_constraintStart_toEndOf="@+id/genderImageView"
+        app:layout_constraintTop_toTopOf="@+id/genderImageView" />
+
+
+    <RatingBar
+        android:id="@+id/reviewratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:defaultFocusHighlightEnabled="false"
+        android:foreground="@null"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#AF9BD2"
+        android:rating="0"
+        android:secondaryProgressTint="#AF9BD2"
+        app:layout_constraintBottom_toBottomOf="@+id/ageTextView"
+        app:layout_constraintStart_toEndOf="@+id/ageTextView"
+        app:layout_constraintTop_toTopOf="@+id/ageTextView" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/kakaoregular"
+        android:text="20살"
+        app:layout_constraintBottom_toBottomOf="@+id/nicknameTextVIew"
+        app:layout_constraintStart_toEndOf="@+id/nicknameTextVIew"
+        app:layout_constraintTop_toTopOf="@+id/nicknameTextVIew" />
+
+    <TextView
+        android:id="@+id/commentTextView"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/kakaobold"
+        android:text="단 맛은 적당했으나 알코올 도수가 높아서 저한테는 조금 힘들었네요"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/genderImageView"
+        app:layout_constraintTop_toBottomOf="@+id/genderImageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
